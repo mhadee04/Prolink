@@ -372,19 +372,67 @@ a:focus {
 // end slider section
 
 // service section
+// hero section
+.hero_section {
+  background-color: $primary2;
+  color: $white;
 
+  .heading_container {
+    margin-bottom: 45px;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .img-box {
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .detail-box {
+    h3 {
+      font-weight: bold;
+    }
+
+    p {
+      margin-top: 15px;
+    }
+
+    a {
+      @include hero_btn($primary1, $white, 10px, 45px, 0px);
+      margin-top: 15px;
+    }
+  }
+}
+
+// end hero section
+
+// start about section
+.about_section {
+  position: relative;
+  background-color: #dedede;
+  text-align: left !important;
+
+  }
+
+
+// end about section 
+//service section
 .service_section {
   position: relative;
 
   .box {
+    height: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 45px;
-    background-color: #f8f8f9;
+    background-color: #dedede;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
 
     .img-box {
       display: flex;
@@ -393,12 +441,13 @@ a:focus {
       width: 125px;
       min-width: 75px;
       height: 75px;
-      margin-bottom: 15px;
+      margin: 0 auto;
 
       img {
         max-width: 100%;
         max-height: 100%;
         transition: all 0.3s;
+        border-radius: 10px;
       }
     }
 
@@ -435,42 +484,6 @@ a:focus {
 
 // end service section
 
-// about section
-.about_section {
-  background-color: $primary2;
-  color: $white;
-
-  .heading_container {
-    margin-bottom: 45px;
-  }
-
-  .row {
-    align-items: center;
-  }
-
-  .img-box {
-    img {
-      max-width: 100%;
-    }
-  }
-
-  .detail-box {
-    h3 {
-      font-weight: bold;
-    }
-
-    p {
-      margin-top: 15px;
-    }
-
-    a {
-      @include hero_btn($primary1, $white, 10px, 45px, 0px);
-      margin-top: 15px;
-    }
-  }
-}
-
-// end about section
 
 // why section
 
@@ -540,8 +553,8 @@ a:focus {
     padding: 0 15px;
 
     .box {
-      padding: 35px 0 0 0;
-      border-radius: 5px;
+      padding-top: 35px;
+      border-radius: 10px;
       overflow: hidden;
       transition: all .1s;
       margin-top: 45px;
@@ -552,11 +565,13 @@ a:focus {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 90%;
+        
+        margin: 0 auto;
 
         img {
-          width: 120px;
-          border-radius: 100%;
-          border: 5px solid $white;
+          width: 100%;
+          border: 3px solid black;
         }
 
       }
@@ -776,7 +791,9 @@ a:focus {
 }
 
 // end info section
-
+.btt{
+  color: white;
+}
 /* footer section*/
 
 .footer_section {
